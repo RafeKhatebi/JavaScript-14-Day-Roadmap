@@ -2,7 +2,7 @@
 
 | Day    | Topic                    | What to Learn                                                                     | Practice Task                                            |
 | ------ | ------------------------ | --------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| Day 1  | JavaScript Basics        | Variables (let, const, var), data types, comments                                 | Write variables for name, age, and log them              |
+| Day 1  | JavaScript Basics        | Variables (let, const, var), data types, comments.                                | Write variables for name, age, and log them              |
 | Day 2  | Operators & Conditionals | Arithmetic, comparison, logical operators, if/else, ternary operator              | Age checker: input age and return a message              |
 | Day 3  | Functions                | Function declaration, parameters, return values, arrow functions                  | Create a square-number function                          |
 | Day 4  | Arrays                   | Creating arrays, accessing items, methods like push, pop, indexOf, includes       | Make a fruit list and add/remove items                   |
