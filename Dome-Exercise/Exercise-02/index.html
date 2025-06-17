@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2: Changing Styles Dynamically</title>
+    <style>
+        #myText {
+            background-color: #f0f0f0;
+            color: #333;
+            font-weight: normal;
+            padding: 16px;
+            border-radius: 8px;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myText">Clikc to change the color.</div>
+    <button onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeStyle() {
+            const element = document.getElementById('myText');
+            element.style.backgroundColor = '#4a90e2';
+            element.style.color = '#fff';
+            element.style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+
+</html>

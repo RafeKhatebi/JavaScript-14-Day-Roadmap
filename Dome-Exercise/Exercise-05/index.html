@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5: Handling Mouse Events (mouseover & mouseout)</title>
+    <style>
+        #hbox {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            border: 2px solid #972b2b;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hbox">Hover over me</div>
+
+    <script>
+        const box = document.getElementById('hbox');
+
+        box.addEventListener('mouseover', function () {
+            box.style.backgroundColor = 'blue';
+            box.style.color = 'white';
+        });
+
+        box.addEventListener('mouseout', function () {
+            box.style.backgroundColor = 'white';
+            box.style.color = 'black';
+        });
+    </script>
+</body>
+
+</html>
