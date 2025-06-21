@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Array Methods</title>
+</head>
+
+<body>
+    <center>
+        <h1>Javascript 14 - Day RoadMap Day-11</h1>
+        <h2>--------------Advanced Array Methods--------------</h2>
+       
+    </center>
+
+    <script>
+        const numbers1 = [1, 2, 3, 4, 5];
+        const doubled = numbers1.map(num => num * 2);
+        console.log(doubled); // Output: [2, 4, 6, 8, 10]
+    </script>
+    <!-- Example: of filter method -->
+    <script>
+        const numbers2 = [1, 2, 3, 4, 5];
+        const evenNumbers = numbers2.filter(num => num % 2 === 0);
+        console.log(evenNumbers); // Output: [2, 4]
+    </script>
+    <!-- Example: of reduce method -->
+    <script>
+        const numbers3 = [1, 2, 3, 4, 5];
+        const sum = numbers3.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sum); // Output: 15
+    </script>
+    <!-- Example: of forEach method -->
+    <script>
+        const numbers4 = [1, 2, 3, 4, 5];
+        numbers4.forEach(num => console.log(num * 2));
+        // Output: 2, 4, 6, 8, 10
+    </script>
+
+</body>
+
+</html>
