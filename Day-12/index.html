@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <title>Timer Example</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f0f0f0;
+          animation: fadeOut 2s ease-in-out;
+        }
+        h1 {
+          color: #333;
+        }
+        #timer {
+          font-size: 2em;
+          color: #ff5722;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Timer: <span id="timer">0</span> seconds</h1>
+
+      <script>
+        let count = 0;
+        const timerElement = document.getElementById("timer");
+
+        const intervalId = setInterval(() => {
+          count++;
+          timerElement.textContent = count;
+
+          // the condition to stop the timer
+          if (count >= 11) {
+            clearInterval(intervalId);
+            alert("Time's up!");
+          }
+        }, 1000); // 1000 milliseconds = 1 second
+      </script>
+    </body>
+  </html>
+</html>
